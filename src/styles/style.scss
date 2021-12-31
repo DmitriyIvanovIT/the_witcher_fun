@@ -1,0 +1,63 @@
+@import "fonts";
+
+html {
+  position: relative;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  min-height: 100vh;
+  padding-bottom: 68px;
+  font-family: Arial, sans-serif;
+  color: #fff;
+  font-size: 20px;
+  line-height: 1.2;
+  font-weight: 400;
+  background-color: #000;
+  background-image: linear-gradient(181.78deg, rgba(0, 0, 0, 0) 49.38%, rgba(0, 0, 0, 0.42) 98.49%),
+    url("../../public/img/bg.jpeg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+  object-position: center;
+}
+
+h1, h2, h3, h4, h5, p, figure {
+  margin: 0;
+}
+
+button {
+  font-family: inherit;
+  background: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  color: inherit;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+iframe {
+  border: none;
+}
