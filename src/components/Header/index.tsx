@@ -13,7 +13,7 @@ const Header = (): JSX.Element => {
 
   return (
     <HeaderStyle>
-      <Logo />
+      <Logo className="logo" />
       <HeaderTimer>До выхода 3 сезона осталось {date}</HeaderTimer>
       <Navigation />
     </HeaderStyle>

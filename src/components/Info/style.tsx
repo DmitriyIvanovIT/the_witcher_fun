@@ -5,6 +5,14 @@ export const InfoStyle = styled.section`
   flex-direction: column;
   align-items: flex-start;
   margin-bottom: 43px;
+
+  @media (max-width: 768px) {
+    margin-bottom: 0;
+  }
+
+  @media (max-width: 730px) {
+    margin-bottom: 30px;
+  }
 `;
 
 export const InfoTitle = styled.h1`
@@ -12,6 +20,14 @@ export const InfoTitle = styled.h1`
   font-size: 90px;
   font-weight: 500;
   margin-bottom: 8px;
+
+  @media (max-width: 768px) {
+    font-size: 60px;
+  }
+
+  @media (max-width: 576px) {
+    font-size: 40px;
+  }
 `;
 
 export const InfoDescription = styled.p`
@@ -24,6 +40,14 @@ export const InfoDescription = styled.p`
   font-size: 20px;
   line-height: 130%;
   color: #FFFFFF;
+
+  @media (max-width: 768px) {
+    margin-bottom: 28px;
+  }
+
+  @media (max-width: 576px) {
+    margin-bottom: 23px;
+  }
 `;
 
 export const InfoButton = styled.a`

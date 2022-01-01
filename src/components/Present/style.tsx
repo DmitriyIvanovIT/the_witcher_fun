@@ -1,7 +1,14 @@
 import styled from 'styled-components';
 
 export const PresentStyle = styled.section`
-  margin-bottom: 30px;
+  @media (max-width: 768px) {
+    position: relative;
+    top: -27px;
+  }
+
+  @media (max-width: 730px) {
+    top: 0;
+  }
 `;
 
 export const Tabs = styled.div`
@@ -12,6 +19,15 @@ export const Tabs = styled.div`
   margin-bottom: 12px;
   padding: 13px 21px;
   background: rgba(0, 0, 0, 0.7);
+
+  @media (max-width: 768px) {
+    padding: 16px 46px;
+  }
+
+  @media (max-width: 576px) {
+    margin-right: auto;
+    padding: 10px 30px;
+  }
 `;
 
 export const Tab = styled.button`
@@ -31,10 +47,23 @@ export const PresentContent = styled.ul`
   display: flex;
   align-items: center;
   justify-content: space-between;
+
+  @media (max-width: 768px) {
+    flex-wrap: wrap;
+  }
 `;
 
 export const CardVideo = styled.li`
   flex-basis: 285px;
+
+  @media (max-width: 768px) {
+    flex-basis: 320px;
+    margin-bottom: 40px;
+  }
+
+  @media (max-width: 730px) {
+    flex-basis: 100%;
+  }
 `;
 
 export const CardVideoLink = styled.a``;
@@ -43,21 +72,55 @@ export const CardVideoImg = styled.img`
   height: 146px;
   width: 100%;
   margin-bottom: 10px;
+
+  @media (max-width: 768px) {
+    height: 180px;
+  }
+
+  @media (max-width: 730px) {
+    height: auto;
+  }
 `;
 
 export const CardVideoName = styled.figcaption``;
 
 export const CardPhoto = styled.li`
   flex-basis: 255px;
+
+  @media (max-width: 768px) {
+    flex-basis: 320px;
+    margin-bottom: 30px;
+  }
+
+  @media (max-width: 768px) {
+    flex-basis: 100%;
+  }
 `;
 
 export const CardPhotoImg = styled.img`
   width: 100%;
   height: 206px;
+
+  @media (max-width: 768px) {
+    height: 270px;
+  }
+
+  @media (max-width: 730px) {
+    height: auto;
+  }
 `;
 
 export const CardProduct = styled.li`
   flex-basis: 285px;
+
+  @media (max-width: 768px) {
+    flex-basis: 320px;
+    margin-bottom: 30px;
+  }
+
+  @media (max-width: 768px) {
+    flex-basis: 100%;
+  }
 `;
 
 export const Product = styled.article``;
@@ -66,9 +129,18 @@ export const ProductImg = styled.img`
   width: 100%;
   height: 176px;
   margin-bottom: 10px;
+
+  @media (max-width: 768px) {
+    height: 180px;
+  }
+
+  @media (max-width: 730px) {
+    height: auto;
+  }
 `;
 
 export const ProductName = styled.span`
+  display: inline-block;
   margin-bottom: 5px;
 `;
 
@@ -113,6 +185,16 @@ export const ProductButton = styled.button`
   &:active {
     & svg {
       fill: #b3b3b3;
+    }
+  }
+
+  @media (max-width: 768px) {
+    width: 30px;
+    height: 30px;
+
+    & svg {
+      width: 21px;
+      height: 21px;
     }
   }
 `;
